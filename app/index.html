@@ -1,34 +1,19 @@
 <!doctype html>
-<html lang="en" ng-app="phonecatApp">
-  <head>
-    <meta charset="utf-8">
-    <title>Google Phone Gallery</title>
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="app.css" />
-    <link rel="stylesheet" href="app.animations.css" />
+<html lang="en">
 
-    <script src="lib/jquery/dist/jquery.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Example - example-$filter</title>
     <script src="lib/angular/angular.js"></script>
-    <script src="lib/angular-animate/angular-animate.js"></script>
-    <script src="lib/angular-resource/angular-resource.js"></script>
-    <script src="lib/angular-route/angular-route.js"></script>
-    <script src="app.module.js"></script>
-    <script src="app.config.js"></script>
-    <script src="app.animations.js"></script>
-    <script src="core/core.module.js"></script>
-    <script src="core/checkmark/checkmark.filter.js"></script>
-    <script src="core/phone/phone.module.js"></script>
-    <script src="core/phone/phone.service.js"></script>
-    <script src="phone-list/phone-list.module.js"></script>
-    <script src="phone-list/phone-list.component.js"></script>
-    <script src="phone-detail/phone-detail.module.js"></script>
-    <script src="phone-detail/phone-detail.component.js"></script>
-  </head>
-  <body>
+    <script src="visitor-home-page/script.js"></script>
+</head>
 
-    <div class="view-container">
-      <div ng-view class="view-frame"></div>
+<body ng-app="filterExample">
+    <div ng-controller="MainCtrl">
+        <h3>{{ originalText }}</h3>
+        <h3>{{ filteredText }}</h3>
+        <h4>{{ things }}</h4>
     </div>
+</body>
 
-  </body>
 </html>
